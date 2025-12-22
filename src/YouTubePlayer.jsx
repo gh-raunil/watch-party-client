@@ -32,7 +32,7 @@ export default function YouTubePlayer({ roomId, isHost }) {
 
   return (
     <YouTube
-      videoId="dQw4w9WgXcQ" // any YouTube video ID
+      videoId="CJSc6VlbqnM" // any YouTube video ID
       opts={{ width: "800", height: "450", playerVars: { autoplay: 0 } }}
       onReady={onReady}
       onPlay={() => send("play")}
