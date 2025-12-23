@@ -29,7 +29,7 @@ const VideoPlayer = ({ roomId, isHost }) => {
       onPlay={() => isHost && emitEvent("play")}
       onPause={() => isHost && emitEvent("pause")}
     >
-      <source src="/sample1.mp4" type="video/mp4" />
+      <source src="/public/sample1.mp4" type="video/mp4" />
     </video>
   );
 };
