@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { socket } from "./socket";
 import YouTubePlayer from "./YouTubePlayer";
+import VideoPlayer from "./VideoPlayer";
 
 function App() {
   const [roomId, setRoomId] = useState("");
@@ -31,7 +32,8 @@ function App() {
           <button onClick={() => joinRoom(false)}>Join Room</button>
         </>
       ) : (
-        <YouTubePlayer roomId={roomId} isHost={isHost} />
+        // <YouTubePlayer roomId={roomId} isHost={isHost} />
+        <VideoPlayer roomId={roomId} isHost={isHost}/>
       )}
     </div>
   );
